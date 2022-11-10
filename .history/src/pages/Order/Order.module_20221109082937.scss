@@ -1,0 +1,66 @@
+.wrapper {
+  width: var(--wrapper-width);
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.burger {
+  width: 100%;
+}
+.content {
+  width: 100%;
+}
+.sandwich {
+  height: 50px;
+  margin: 5px 15px;
+  background-color: var(--color-sandwich);
+  border-radius: 30px;
+}
+.salad {
+  height: 30px;
+  margin: 5px;
+  background-color: #418e2b;
+  border-radius: 30px;
+}
+.bacon {
+  height: 30px;
+  margin: 5px 10px;
+  background-color: #881f1fe3;
+  border-radius: 30px;
+}
+.cheese {
+  height: 30px;
+  margin: 5px 2px;
+  background-color: #e1b74ae3;
+  border-radius: 30px;
+}
+.meat {
+  height: 30px;
+  margin: 5px 10px;
+  background-color: #3a2003e3;
+  border-radius: 30px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+}
+.price {
+  width: 100%;
+}
+.select {
+  width: 100%;
+}
+.wrapper-selection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.label {
+  width: 40%;
+}
+.wrapper-button {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}

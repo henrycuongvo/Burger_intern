@@ -1,0 +1,29 @@
+.wrapper {
+  width: var(--wrapper-width);
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.burger {
+  width: 100%;
+}
+.content {
+  width: 100%;
+}
+.sandwich {
+  height: 30px;
+  margin: 5px 10px;
+  background-color: var(--color-sandwich);
+}
+.salad {
+  height: 20px;
+  margin: 5px;
+}
+.bacon {
+}
+.cheese {
+}
+.meat {
+}
+.sanwich {
+}

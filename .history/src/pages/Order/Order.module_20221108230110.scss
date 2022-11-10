@@ -1,0 +1,40 @@
+.wrapper {
+  width: var(--wrapper-width);
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.burger {
+  width: 100%;
+}
+.content {
+  width: 100%;
+}
+.sandwich {
+  height: 50px;
+  margin: 5px 10px;
+  background-color: var(--color-sandwich);
+  border-radius: 10px;
+}
+.salad {
+  height: 30px;
+  margin: 5px;
+  background-color: #418e2b;
+}
+.bacon {
+  height: 30px;
+  margin: 5px 10px;
+  background-color: #881f1fe3;
+}
+.cheese {
+  height: 30px;
+  margin: 5px 10px;
+  background-color: #e1b74ae3;
+}
+.meat {
+  height: 30px;
+  margin: 5px 10px;
+  background-color: #3a2003e3;
+}
+.sanwich {
+}
