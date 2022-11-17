@@ -1,0 +1,10 @@
+.wrapper {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+}
+.home {
+  width: 100%;
+  border: 2px solid var(--border-color-black);
+}

@@ -1,0 +1,19 @@
+* {
+  --color-link: #333;
+  --font-weight: 500;
+}
+.wrapper {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+}
+.home {
+  width: 100%;
+  border: 2px solid var(--border-color-black);
+  a {
+    margin-left: 30px;
+    color: var(--color-link);
+    font-weight: var(--font-weight);
+  }
+}
