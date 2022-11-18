@@ -153,10 +153,6 @@ const Order = () => {
   const [cheese, setCheese] = useState(0);
   const [meat, setMeat] = useState(0);
   const [total, setTotal] = useState(0);
-  function changeValue(name, value) {
-    switch (name) {
-    }
-  }
 };
 
 export default Order;
