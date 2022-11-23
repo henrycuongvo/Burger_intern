@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "json-server": "^0.17.1",
+    "prettier": "2.7.1",
     "react-router-dom": "^6.4.3"
   }
 }

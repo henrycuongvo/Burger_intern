@@ -1,0 +1,85 @@
+* {
+    --font-size: 20px;
+}
+.wrapper {
+    width: var(--wrapper-width);
+    min-height: 600px;
+    margin: 0 auto;
+}
+//Css for Burger
+
+.content {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.sandwich {
+    height: 50px;
+    margin: 5px 15px;
+    background-color: var(--color-sandwich);
+    border-radius: 30px;
+}
+.salad {
+    height: 30px;
+    margin: 5px;
+    background-color: #418e2b;
+    border-radius: 30px;
+}
+.bacon {
+    height: 30px;
+    margin: 5px 10px;
+    background-color: #881f1fe3;
+    border-radius: 30px;
+}
+.cheese {
+    height: 30px;
+    margin: 5px 2px;
+    background-color: #e1b74ae3;
+    border-radius: 30px;
+}
+.meat {
+    height: 30px;
+    margin: 5px 10px;
+    background-color: #3a2003e3;
+    border-radius: 30px;
+}
+
+//Css for Table Selection
+
+.table {
+    width: var(--wrapper-width);
+    margin-top: 40px;
+    font-size: var(--font-size);
+    font-weight: 500;
+}
+.total-price {
+    width: 100%;
+    border: 2px solid #333;
+}
+
+// CSS for Selection Table
+
+.selection {
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid #333;
+}
+.wrapper-select {
+    padding-bottom: 20px;
+}
+.select {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.wrapper-button {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+.show-number {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    border: 1px solid #333;
+}
