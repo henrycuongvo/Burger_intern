@@ -1,0 +1,27 @@
+* {
+    --color-link: #333;
+    --font-weight: 500;
+}
+.wrapper {
+    width: 100%;
+    text-align: start;
+    display: flex;
+
+    flex-direction: row;
+}
+.burger_order {
+    display: flex;
+    flex-direction: row;
+}
+.burger {
+}
+.order {
+}
+.login_register {
+    display: flex;
+    flex-direction: row;
+}
+.login {
+}
+.register {
+}
