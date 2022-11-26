@@ -137,4 +137,4 @@ const userReducer = createSlice({
     },
 });
 
-export default userReducer.reducer;
+export default userReducer;

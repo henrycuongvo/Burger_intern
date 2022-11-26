@@ -8,7 +8,7 @@ const initialState = {
         meat: 0,
     },
     totalPrice: 0,
-    loading: 'loading',
+    value: 0,
 };
 export const burgerSlice = createSlice({
     name: 'burger',
@@ -44,7 +44,7 @@ export const burgerSlice = createSlice({
                 state.cart.meat;
         },
         incrementSaga: (state, action) => {
-            state.loading = action.payload;
+            state.value = action.payload;
         },
     },
 });

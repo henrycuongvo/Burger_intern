@@ -2,15 +2,13 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Input, Button, Checkbox } from 'antd';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
-import classNames from 'classnames/bind';
 
 import { ROUTES } from 'routes';
 import { loginAction } from 'redux/action/user.action';
-import styles from './Login.module.scss';
 
-const cx = classNames.bind(styles);
+import * as S from './styles';
 
-const Login = () => {
+const LoginPage = () => {
     const [loginForm] = Form.useForm();
 
     const navigate = useNavigate();
@@ -18,22 +16,21 @@ const Login = () => {
 
     const dispatch = useDispatch();
     const { loginData } = useSelector((state) => state.user);
-    console.log(loginData);
 
-    // useEffect(() => {
-    //     if (loginData.error) {
-    //         loginForm.setFields([
-    //             {
-    //                 name: 'email',
-    //                 errors: [' '],
-    //             },
-    //             {
-    //                 name: 'password',
-    //                 errors: [loginData.error],
-    //             },
-    //         ]);
-    //     }
-    // }, [loginData.error]);
+    useEffect(() => {
+        if (loginData.error) {
+            loginForm.setFields([
+                {
+                    name: 'email',
+                    errors: [' '],
+                },
+                {
+                    name: 'password',
+                    errors: [loginData.error],
+                },
+            ]);
+        }
+    }, [loginData.error]);
 
     const handleLogin = (values) => {
         dispatch(
@@ -49,12 +46,10 @@ const Login = () => {
                 },
             }),
         );
-        console.log(loginAction);
     };
 
     return (
         <Form
-            className={cx('wrapper')}
             form={loginForm}
             name="loginForm"
             layout="vertical"
@@ -107,4 +102,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default LoginPage;

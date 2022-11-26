@@ -8,7 +8,6 @@ const initialState = {
         meat: 0,
     },
     totalPrice: 0,
-    loading: 'loading',
 };
 export const burgerSlice = createSlice({
     name: 'burger',
@@ -38,20 +37,14 @@ export const burgerSlice = createSlice({
         },
         incrementByAmount: (state) => {
             state.totalPrice =
-                state.cart.salad +
-                state.cart.bacon +
-                state.cart.cheese +
-                state.cart.meat;
+                state.cart.salad + state.cart.bacon + state.cart.cheese + state.cart.meat;
         },
-        incrementSaga: (state, action) => {
-            state.loading = action.payload;
-        },
+        incrementSaga: (state) => {},
     },
 });
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount, incrementSaga } =
-    burgerSlice.actions;
+export const { increment, decrement, incrementByAmount } = burgerSlice.actions;
 export const showConnt = (state) => state.burger.value;
 
 export default burgerSlice.reducer;

@@ -192,6 +192,13 @@ export default function BurgerBuilder() {
                         {' '}
                         Check out
                     </Button>
+                    <Button
+                        primary
+                        onClick={() => dispatch(incrementSaga(String))}
+                    >
+                        {' '}
+                        Saga
+                    </Button>
                 </div>
             </div>
         </>

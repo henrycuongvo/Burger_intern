@@ -2,12 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Input, Button } from 'antd';
 import { Route, useNavigate } from 'react-router-dom';
-import { ROUTES } from 'routes/index';
 
+import { ROUTES } from 'routes/index';
 import { registerAction } from 'redux/action/user.action';
-import classNames from 'classnames/bind';
-import styles from './Register.module.scss';
-const cx = classNames.bind(styles);
 
 const Register = () => {
     const [registerForm] = Form.useForm();
@@ -61,7 +58,7 @@ const Register = () => {
     };
     return (
         <>
-            <div className={cx('wrapper')}>
+            <div className="wrapper">
                 <Form
                     form={registerForm}
                     name="registerForm"

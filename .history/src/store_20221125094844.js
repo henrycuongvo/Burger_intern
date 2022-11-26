@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
-import userReducer from 'redux/reducers/user.reducer';
 import rootSga from 'redux/saga';
 
 import burgerReducer from './redux/reducers/burger.reducer';
+import userReducer from 'redux/reducers/user.reducer';
 
 const sagaMiddleware = createSagaMiddleware();
 

@@ -61,7 +61,7 @@ const Register = () => {
     };
     return (
         <>
-            <div className={cx('wrapper')}>
+            <div className="wrapper">
                 <Form
                     form={registerForm}
                     name="registerForm"

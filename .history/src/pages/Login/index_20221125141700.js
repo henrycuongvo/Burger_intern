@@ -18,22 +18,21 @@ const Login = () => {
 
     const dispatch = useDispatch();
     const { loginData } = useSelector((state) => state.user);
-    console.log(loginData);
 
-    // useEffect(() => {
-    //     if (loginData.error) {
-    //         loginForm.setFields([
-    //             {
-    //                 name: 'email',
-    //                 errors: [' '],
-    //             },
-    //             {
-    //                 name: 'password',
-    //                 errors: [loginData.error],
-    //             },
-    //         ]);
-    //     }
-    // }, [loginData.error]);
+    useEffect(() => {
+        if (loginData.error) {
+            loginForm.setFields([
+                {
+                    name: 'email',
+                    errors: [' '],
+                },
+                {
+                    name: 'password',
+                    errors: [loginData.error],
+                },
+            ]);
+        }
+    }, [loginData.error]);
 
     const handleLogin = (values) => {
         dispatch(
@@ -49,12 +48,10 @@ const Login = () => {
                 },
             }),
         );
-        console.log(loginAction);
     };
 
     return (
         <Form
-            className={cx('wrapper')}
             form={loginForm}
             name="loginForm"
             layout="vertical"

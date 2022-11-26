@@ -27,6 +27,9 @@ export default function BurgerBuilder() {
 
     //handle Button Check Out
     const handleCheckOut = () => {};
+    const handleSaga = () => {
+        dispatch(incrementSaga());
+    };
 
     return (
         <>
@@ -192,6 +195,7 @@ export default function BurgerBuilder() {
                         {' '}
                         Check out
                     </Button>
+                    <Button primary> Saga</Button>
                 </div>
             </div>
         </>

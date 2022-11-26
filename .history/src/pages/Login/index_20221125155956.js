@@ -20,20 +20,20 @@ const Login = () => {
     const { loginData } = useSelector((state) => state.user);
     console.log(loginData);
 
-    // useEffect(() => {
-    //     if (loginData.error) {
-    //         loginForm.setFields([
-    //             {
-    //                 name: 'email',
-    //                 errors: [' '],
-    //             },
-    //             {
-    //                 name: 'password',
-    //                 errors: [loginData.error],
-    //             },
-    //         ]);
-    //     }
-    // }, [loginData.error]);
+    useEffect(() => {
+        if (loginData.error) {
+            loginForm.setFields([
+                {
+                    name: 'email',
+                    errors: [' '],
+                },
+                {
+                    name: 'password',
+                    errors: [loginData.error],
+                },
+            ]);
+        }
+    }, [loginData.error]);
 
     const handleLogin = (values) => {
         dispatch(

@@ -44,6 +44,7 @@ const Login = () => {
                 },
                 callback: {
                     goToDashboard: () => navigate('/'),
+                    // goToDashboard: () => navigate('/'),
 
                     goToHome: () => navigate(state?.prevPath || '/order'),
                 },

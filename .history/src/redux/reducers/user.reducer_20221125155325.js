@@ -6,7 +6,7 @@ const initialState = {
     userInfo: {
         data: {},
         loading: true,
-        error: null,
+        error: undefined,
     },
     loginData: {
         loading: false,

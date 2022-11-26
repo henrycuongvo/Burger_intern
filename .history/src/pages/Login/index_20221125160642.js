@@ -43,7 +43,8 @@ const Login = () => {
                     password: values.password,
                 },
                 callback: {
-                    goToDashboard: () => navigate('/'),
+                    // goToDashboard: () => navigate('/'),
+                    // goToDashboard: () => navigate('/'),
 
                     goToHome: () => navigate(state?.prevPath || '/order'),
                 },
