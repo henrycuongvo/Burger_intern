@@ -43,7 +43,6 @@ const Login = () => {
                 data: {
                     email: values.email,
                     password: values.password,
-                    accessToken: true,
                 },
                 callback: {
                     goToDashboard: () => navigate('/'),

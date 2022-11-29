@@ -47,7 +47,6 @@ const Checkout = () => {
             getCart,
         };
         dispatch(addProduct(newProduct));
-        navigate('/orders');
     };
 
     return (
@@ -161,7 +160,7 @@ const Checkout = () => {
                     <Button
                         order
                         onClick={() => {
-                            handleOrderProduct();
+                          handleOrderProduct(),
                         }}
                     >
                         {/* Handle button if order ends then navigate to */}

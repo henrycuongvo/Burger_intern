@@ -7,7 +7,7 @@ import Login from 'pages/Login';
 import Register from 'pages/Register';
 import Checkout from 'pages/Checkout';
 import PrivateRoute from 'pages/PrivateRoute';
-import Orders from 'pages/Orders';
+import Orders from 'pages/Order';
 export const NameContext = createContext();
 
 function App() {

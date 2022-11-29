@@ -23,7 +23,7 @@ const onChange = (pagination, filters, sorter, extra) => {
     console.log('params', pagination, filters, sorter, extra);
 };
 
-function Order() {
+function Orders() {
     return (
         <>
             <Helmet>
@@ -35,4 +35,4 @@ function Order() {
     );
 }
 
-export default Order;
+export default Orders;

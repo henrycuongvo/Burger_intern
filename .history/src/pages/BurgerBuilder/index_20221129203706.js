@@ -41,7 +41,7 @@ export default function BurgerBuilder() {
 
     //handle Button Check Out
     const handleCheckOut = () => {
-        const isLoggedIn = Boolean(localStorage.getItem('accessToken'));
+        const isLoggedIn = Boolean(localStorage.getItem('tokenId'));
         if (isLoggedIn === true) {
             navigate('/checkout');
         } else navigate('/login');

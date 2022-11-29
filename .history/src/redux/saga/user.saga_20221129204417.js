@@ -15,7 +15,6 @@ function* loginSaga(action) {
                     data: result.data.user,
                 },
             });
-
             notification.success({
                 message: 'Đăng nhập thành công',
             });

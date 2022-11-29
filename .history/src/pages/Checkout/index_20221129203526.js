@@ -47,7 +47,6 @@ const Checkout = () => {
             getCart,
         };
         dispatch(addProduct(newProduct));
-        navigate('/orders');
     };
 
     return (
