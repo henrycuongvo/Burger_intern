@@ -1,0 +1,17 @@
+{
+    "users": [],
+    "login": [],
+    "registers": [],
+    "bugers": [
+        {
+            "ingredients": [
+                {
+                    "salad": 1,
+                    "bacon": 1
+                }
+            ],
+            "info": []
+        }
+    ],
+    "categories": []
+}

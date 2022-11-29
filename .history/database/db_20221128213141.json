@@ -1,0 +1,44 @@
+{
+    "users": [],
+    "login": [
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 1
+        },
+        {
+            "email": "sdsada",
+            "password": "abc",
+            "id": 2
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 3
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 4
+        },
+        {
+            "email": "anc",
+            "password": "abc",
+            "id": 5
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 6
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 7
+        }
+    ],
+    "register": [],
+    "ingredients": [],
+    "info": [],
+    "categories": []
+}

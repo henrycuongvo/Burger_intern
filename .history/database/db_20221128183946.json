@@ -1,0 +1,14 @@
+{
+    "users": [],
+    "login": [],
+    "registers": [],
+
+    "ingredients": [
+        {
+            "salad": 1,
+            "bacon": 1
+        }
+    ],
+    "info": [],
+    "categories": []
+}
