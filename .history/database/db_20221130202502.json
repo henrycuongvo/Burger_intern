@@ -1,0 +1,207 @@
+{
+    "users": [],
+    "login": [
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 1
+        },
+        {
+            "email": "sdsada",
+            "password": "abc",
+            "id": 2
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 3
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 4
+        },
+        {
+            "email": "anc",
+            "password": "abc",
+            "id": 5
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 6
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 7
+        },
+        {
+            "email": "abc",
+            "password": "abcbc",
+            "id": 8
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 9
+        },
+        {
+            "email": "abc",
+            "password": "abcd",
+            "id": 10
+        },
+        {
+            "email": "abc",
+            "password": "abcd",
+            "id": 11
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 12
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 13
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 14
+        },
+        {
+            "email": "abc",
+            "password": "abdbsdba",
+            "id": 15
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 16
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 17
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 18
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 19
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 20
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 21
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 22
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 23
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 24
+        },
+        {
+            "email": "abc",
+            "password": "abcd",
+            "id": 25
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 26
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 27
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 28
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 29
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 30
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 31
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "accessToken": true,
+            "id": 32
+        },
+        {
+            "email": "abc",
+            "password": "abcd",
+            "accessToken": true,
+            "id": 33
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "accessToken": true,
+            "id": 34
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "accessToken": true,
+            "id": 35
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "accessToken": true,
+            "id": 36
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "accessToken": true,
+            "id": 37
+        }
+    ],
+    "register": [
+        {
+            "fullName": "abc",
+            "email": "abc@gmail.com",
+            "password": "abc",
+            "role": "user",
+            "id": 1
+        }
+    ],
+    "products": [],
+    "categories": []
+}

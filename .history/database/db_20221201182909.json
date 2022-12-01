@@ -1,0 +1,38 @@
+{
+    "users": [],
+    "login": [],
+    "register": [],
+    "products": [
+        {
+            "getCart": {
+                "salad": 2,
+                "bacon": 0,
+                "cheese": 0,
+                "meat": 0
+            },
+            "getPrice": 2,
+            "id": 5
+        },
+        {
+            "getCart": {
+                "salad": 1,
+                "bacon": 1,
+                "cheese": 1,
+                "meat": 1
+            },
+            "getPrice": 4,
+            "id": 6
+        },
+        {
+            "getCart": {
+                "salad": 3,
+                "bacon": 0,
+                "cheese": 0,
+                "meat": 0
+            },
+            "getPrice": 3,
+            "id": 7
+        }
+    ],
+    "categories": []
+}

@@ -1,0 +1,36 @@
+{
+    "users": [],
+    "login": [],
+    "register": [],
+    "products": [
+        {
+            "salad": 0,
+            "bacon": 0,
+            "cheese": 0,
+            "meat": 0,
+            "id": 1
+        },
+        {
+            "salad": 2,
+            "bacon": 0,
+            "cheese": 0,
+            "meat": 0,
+            "id": 2
+        },
+        {
+            "salad": 1,
+            "bacon": 1,
+            "cheese": 1,
+            "meat": 1,
+            "id": 3
+        },
+        {
+            "salad": 0,
+            "bacon": 0,
+            "cheese": 0,
+            "meat": 0,
+            "id": 4
+        }
+    ],
+    "categories": []
+}

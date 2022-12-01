@@ -1,0 +1,18 @@
+{
+    "users": [],
+    "login": [],
+    "register": [],
+    "products": [
+        {
+            "getCart": {
+                "salad": 2,
+                "bacon": 0,
+                "cheese": 0,
+                "meat": 0
+            },
+            "getPrice": 2,
+            "id": 5
+        }
+    ],
+    "categories": []
+}
