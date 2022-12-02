@@ -7,7 +7,6 @@ const initialState = {
         // error: null,
         // loading: false,
     },
-    data: [],
 
     createProductData: {
         error: null,
@@ -62,11 +61,12 @@ const productReducer = createSlice({
             return {
                 ...state,
                 productList: {
-                    // ...state.productList,
-                    // data: data,
-                    loading: false,
+                    ...state.productList,
+                    data: data,
+                    // loading: false,
                 },
-                data: data,
+                console.log(data
+                );
             };
         },
 

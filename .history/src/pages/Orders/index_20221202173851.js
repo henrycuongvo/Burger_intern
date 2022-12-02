@@ -26,13 +26,11 @@ const onChange = (pagination, filters, sorter, extra) => {
 };
 
 function Orders() {
-    const productList = useSelector((state) => state.product.data);
-
     const dispatch = useDispatch();
     const handleGetProduct = () => {
         dispatch(getProductListAction());
-        console.log(productList);
     };
+    const productList = useSelector((state) => state.product.productList.data);
 
     return (
         <>

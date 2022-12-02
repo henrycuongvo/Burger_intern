@@ -4,12 +4,12 @@ import { REQUEST, SUCCESS, FAIL, PRODUCT_ACTION } from 'redux/constans';
 const initialState = {
     productList: {
         data: [],
-        // error: null,
-        // loading: false,
+        loading: false,
+        error: null,
     },
-    data: [],
 
     createProductData: {
+        loading: false,
         error: null,
     },
 };
@@ -19,7 +19,6 @@ const productReducer = createSlice({
     initialState,
     reducers: {
         [REQUEST(PRODUCT_ACTION.CREATE_PRODUCT)]: (state, action) => {
-            console.log('reducer');
             return {
                 ...state,
                 createProductData: {
@@ -52,21 +51,18 @@ const productReducer = createSlice({
                 ...state,
                 productList: {
                     ...state.productList,
-                    loading: true,
                 },
             };
         },
         [SUCCESS(PRODUCT_ACTION.GET_PRODUCT_LIST)]: (state, action) => {
+            console.log('getProductList');
             const data = action.payload;
-            console.log(data);
             return {
                 ...state,
                 productList: {
-                    // ...state.productList,
-                    // data: data,
-                    loading: false,
+                    ...state.productList,
+                    data: data,
                 },
-                data: data,
             };
         },
 

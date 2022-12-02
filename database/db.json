@@ -1,58 +1,109 @@
 {
-    "users": [],
-    "login": [],
-    "register": [],
-    "products": [
-        {
-            "getCart": {
-                "salad": 2,
-                "bacon": 0,
-                "cheese": 0,
-                "meat": 0
-            },
-            "getPrice": 2,
-            "id": 5
-        },
-        {
-            "getCart": {
-                "salad": 1,
-                "bacon": 1,
-                "cheese": 1,
-                "meat": 1
-            },
-            "getPrice": 4,
-            "id": 6
-        },
-        {
-            "getCart": {
-                "salad": 3,
-                "bacon": 0,
-                "cheese": 0,
-                "meat": 0
-            },
-            "getPrice": 3,
-            "id": 7
-        },
-        {
-            "getCart": {
-                "salad": 0,
-                "bacon": 0,
-                "cheese": 0,
-                "meat": 0
-            },
-            "getPrice": 0,
-            "id": 8
-        },
-        {
-            "getCart": {
-                "salad": 0,
-                "bacon": 0,
-                "cheese": 0,
-                "meat": 0
-            },
-            "getPrice": 0,
-            "id": 9
-        }
-    ],
-    "categories": []
+  "users": [],
+  "login": [
+    {
+      "email": "abc",
+      "password": "abc",
+      "id": 1
+    },
+    {
+      "email": "abc",
+      "password": "abc",
+      "id": 2
+    }
+  ],
+  "register": [],
+  "products": [
+    {
+      "getCart": {
+        "salad": 2,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 2,
+      "id": 5
+    },
+    {
+      "getCart": {
+        "salad": 0,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 0,
+      "id": 6
+    },
+    {
+      "getCart": {
+        "salad": 2,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 2,
+      "id": 7
+    },
+    {
+      "getCart": {
+        "salad": 0,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 0,
+      "id": 8
+    },
+    {
+      "getCart": {
+        "salad": 2,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 2,
+      "id": 9
+    },
+    {
+      "getCart": {
+        "salad": 2,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 2,
+      "id": 10
+    },
+    {
+      "getCart": {
+        "salad": 2,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 2,
+      "id": 11
+    },
+    {
+      "getCart": {
+        "salad": 2,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 2,
+      "id": 12
+    },
+    {
+      "getCart": {
+        "salad": 0,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 0,
+      "id": 13
+    }
+  ],
+  "categories": []
 }

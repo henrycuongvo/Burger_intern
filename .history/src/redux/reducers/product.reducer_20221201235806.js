@@ -4,12 +4,12 @@ import { REQUEST, SUCCESS, FAIL, PRODUCT_ACTION } from 'redux/constans';
 const initialState = {
     productList: {
         data: [],
-        // error: null,
-        // loading: false,
+        loading: false,
+        error: null,
     },
-    data: [],
 
     createProductData: {
+        loading: false,
         error: null,
     },
 };
@@ -18,12 +18,18 @@ const productReducer = createSlice({
     name: 'product',
     initialState,
     reducers: {
+        getProduct: (state, action) => {
+            return;
+            {
+                console.log('getproduct');
+            }
+        },
         [REQUEST(PRODUCT_ACTION.CREATE_PRODUCT)]: (state, action) => {
-            console.log('reducer');
             return {
                 ...state,
                 createProductData: {
                     ...state.createProductData,
+                    loading: true,
                     error: null,
                 },
             };
@@ -33,6 +39,7 @@ const productReducer = createSlice({
                 ...state,
                 createProductData: {
                     ...state.createProductData,
+                    loading: false,
                 },
             };
         },
@@ -42,6 +49,7 @@ const productReducer = createSlice({
                 ...state,
                 createProductData: {
                     ...state.createProductData,
+                    loading: false,
                     error: error,
                 },
             };
@@ -53,20 +61,19 @@ const productReducer = createSlice({
                 productList: {
                     ...state.productList,
                     loading: true,
+                    error: null,
                 },
             };
         },
         [SUCCESS(PRODUCT_ACTION.GET_PRODUCT_LIST)]: (state, action) => {
+            console.log('getProductList');
             const data = action.payload;
-            console.log(data);
             return {
                 ...state,
                 productList: {
-                    // ...state.productList,
-                    // data: data,
-                    loading: false,
+                    ...state.productList,
+                    data: data,
                 },
-                data: data,
             };
         },
 
@@ -76,6 +83,7 @@ const productReducer = createSlice({
                 ...state,
                 productList: {
                     ...state.productList,
+                    loading: false,
                     error: error,
                 },
             };

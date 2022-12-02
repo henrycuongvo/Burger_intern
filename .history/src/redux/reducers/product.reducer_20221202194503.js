@@ -7,7 +7,6 @@ const initialState = {
         // error: null,
         // loading: false,
     },
-    data: [],
 
     createProductData: {
         error: null,
@@ -57,16 +56,16 @@ const productReducer = createSlice({
             };
         },
         [SUCCESS(PRODUCT_ACTION.GET_PRODUCT_LIST)]: (state, action) => {
+            console.log('getProductList');
             const data = action.payload;
             console.log(data);
             return {
                 ...state,
                 productList: {
-                    // ...state.productList,
-                    // data: data,
-                    loading: false,
+                    ...state.productList,
+                    data: data,
+                    // loading: false,
                 },
-                data: data,
             };
         },
 

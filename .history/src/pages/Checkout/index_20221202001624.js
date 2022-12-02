@@ -8,7 +8,10 @@ import { useNavigate } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from 'components/Button';
 import HeaderUser from 'layouts/HeaderUser';
-import { createProductAction } from 'redux/action/burger.action';
+import {
+    createProductAction,
+    getProductListAction,
+} from 'redux/action/burger.action';
 import { ROUTES } from 'constants/routes';
 const cx = classNames.bind(styles);
 

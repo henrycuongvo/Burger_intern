@@ -24,10 +24,9 @@ const data = [];
 const onChange = (pagination, filters, sorter, extra) => {
     console.log('params', pagination, filters, sorter, extra);
 };
+const productList = useSelector((state) => state.product.productList);
 
 function Orders() {
-    const productList = useSelector((state) => state.product.data);
-
     const dispatch = useDispatch();
     const handleGetProduct = () => {
         dispatch(getProductListAction());

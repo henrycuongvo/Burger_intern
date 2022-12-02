@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from 'components/Button';
 import HeaderUser from 'layouts/HeaderUser';
-import { createProductAction } from 'redux/action/burger.action';
+import { getProductListAction } from 'redux/action/burger.action';
 import { ROUTES } from 'constants/routes';
 const cx = classNames.bind(styles);
 
@@ -43,7 +43,7 @@ const Checkout = () => {
     };
     const handleOrderProduct = () => {
         dispatch(
-            createProductAction({
+            getProductListAction({
                 data: { getCart, getPrice },
                 callback: {
                     goToList: () => navigate(ROUTES.USER.ORDERS),

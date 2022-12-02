@@ -7,7 +7,6 @@ const initialState = {
         // error: null,
         // loading: false,
     },
-    data: [],
 
     createProductData: {
         error: null,
@@ -63,10 +62,9 @@ const productReducer = createSlice({
                 ...state,
                 productList: {
                     // ...state.productList,
-                    // data: data,
-                    loading: false,
+                    data: data,
+                    // loading: false,
                 },
-                data: data,
             };
         },
 

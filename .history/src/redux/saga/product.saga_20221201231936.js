@@ -1,7 +1,7 @@
 import { put, takeEvery, debounce } from 'redux-saga/effects';
 import axios from 'axios';
 import { REQUEST, SUCCESS, FAIL } from 'redux/constans';
-import { PRODUCT_ACTION } from 'redux/constans/product.constant';
+import { PRODUCT_ACTION } from 'redux/constans/burger.constant';
 
 function* createProductSaga(action) {
     try {
@@ -17,6 +17,7 @@ function* createProductSaga(action) {
             },
         });
     }
+    console.log(put);
 }
 function* getProductListSaga() {
     try {

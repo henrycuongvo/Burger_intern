@@ -4,10 +4,12 @@ import styles from './Checkout.module.scss';
 import { Helmet } from 'react-helmet';
 import { Form, Input } from 'antd';
 import { useNavigate } from 'react-router';
+import { v4 as uuidv4 } from 'uuid';
 
 import { useDispatch, useSelector } from 'react-redux';
 import Button from 'components/Button';
 import HeaderUser from 'layouts/HeaderUser';
+import { addProduct } from 'redux/reducers/burger.reducer';
 import { createProductAction } from 'redux/action/burger.action';
 import { ROUTES } from 'constants/routes';
 const cx = classNames.bind(styles);
