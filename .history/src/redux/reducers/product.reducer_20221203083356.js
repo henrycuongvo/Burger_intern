@@ -56,8 +56,7 @@ const productReducer = createSlice({
             };
         },
         [SUCCESS(PRODUCT_ACTION.GET_PRODUCT_LIST)]: (state, action) => {
-            console.log(action);
-            const data = action.payload;
+            const { data } = action.payload;
             return {
                 ...state,
                 productList: {

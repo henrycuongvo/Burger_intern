@@ -3,7 +3,6 @@ import axios from 'axios';
 import { REQUEST, SUCCESS, FAIL } from 'redux/constans';
 import { PRODUCT_ACTION } from 'redux/constans/product.constant';
 import { successProductAction } from 'redux/action/product.action';
-import { string } from 'i/lib/util';
 
 function* createProductSaga(action) {
     try {

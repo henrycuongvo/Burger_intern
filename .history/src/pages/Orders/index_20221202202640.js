@@ -10,17 +10,26 @@ import { getProductListAction } from 'redux/action/product.action';
 import axios from 'axios';
 const cx = classNames.bind(styles);
 
-const data = [];
+// const data = [];
 function Orders() {
-    const dispatch = useDispatch();
-
     const [product, setProduct] = useState();
-
     useEffect(() => {
-        dispatch(getProductListAction());
+        fetch('http://localhost:4000/products')
+            .then((res) => {
+                res.json();
+            })
+            .then((data) => {
+                setProduct(data);
+                console.log(data);
+            });
     }, []);
-    const productList = useSelector((state) => state.product.productList);
-    console.log(productList);
+    console.log(product);
+    const productList = useSelector((state) => state.product.data);
+
+    const dispatch = useDispatch();
+    const handleGetProduct = () => {
+        dispatch(getProductListAction());
+    };
 
     const columns = [
         {
@@ -45,7 +54,14 @@ function Orders() {
             </Helmet>
             <HeaderUser />
             <Table columns={columns} dataSource={data} onChange={onChange} />
-            <button> Get</button>
+            <button
+                onClick={() => {
+                    handleGetProduct();
+                }}
+            >
+                {' '}
+                Get
+            </button>
         </>
     );
 }

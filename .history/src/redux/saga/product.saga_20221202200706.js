@@ -3,7 +3,6 @@ import axios from 'axios';
 import { REQUEST, SUCCESS, FAIL } from 'redux/constans';
 import { PRODUCT_ACTION } from 'redux/constans/product.constant';
 import { successProductAction } from 'redux/action/product.action';
-import { string } from 'i/lib/util';
 
 function* createProductSaga(action) {
     try {
@@ -21,23 +20,23 @@ function* createProductSaga(action) {
     }
 }
 function* getProductListSaga() {
-    try {
-        const result = yield axios.get(`http://localhost:4000/products`);
-        yield put({
-            type: SUCCESS(PRODUCT_ACTION.GET_PRODUCT_LIST),
-            payload: {
-                data: result.data,
-            },
-        });
-        console.log(result.data);
-    } catch (e) {
-        yield put({
-            type: FAIL(PRODUCT_ACTION.GET_PRODUCT_LIST),
-            payload: {
-                error: 'Lỗi không xác định',
-            },
-        });
-    }
+    // try {
+    const result = yield axios.get(`http://localhost:4000/products`);
+    yield put({
+        type: SUCCESS(PRODUCT_ACTION.GET_PRODUCT_LIST),
+        payload: {
+            data: result.data,
+        },
+    });
+    console.log(result.data);
+    // } catch (e) {
+    //     yield put({
+    //         type: FAIL(PRODUCT_ACTION.GET_PRODUCT_LIST),
+    //         payload: {
+    //             error: 'Lỗi không xác định',
+    //         },
+    //     });
+    // }
 }
 
 export default function* productSaga() {

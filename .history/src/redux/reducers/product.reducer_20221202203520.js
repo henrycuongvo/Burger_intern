@@ -4,8 +4,8 @@ import { REQUEST, SUCCESS, FAIL, PRODUCT_ACTION } from 'redux/constans';
 const initialState = {
     productList: {
         data: [],
-        error: null,
-        loading: false,
+        // error: null,
+        // loading: false,
     },
 
     createProductData: {
@@ -56,8 +56,7 @@ const productReducer = createSlice({
             };
         },
         [SUCCESS(PRODUCT_ACTION.GET_PRODUCT_LIST)]: (state, action) => {
-            console.log(action);
-            const data = action.payload;
+            const { data } = action.payload;
             return {
                 ...state,
                 productList: {

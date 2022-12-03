@@ -45,7 +45,7 @@ function Orders() {
             </Helmet>
             <HeaderUser />
             <Table columns={columns} dataSource={data} onChange={onChange} />
-            <button> Get</button>
+            <button onClick> Get</button>
         </>
     );
 }

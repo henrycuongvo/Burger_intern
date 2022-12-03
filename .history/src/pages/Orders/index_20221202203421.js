@@ -12,15 +12,25 @@ const cx = classNames.bind(styles);
 
 const data = [];
 function Orders() {
-    const dispatch = useDispatch();
-
     const [product, setProduct] = useState();
-
+    // useEffect(() => {
+    //     fetch('http://localhost:4000/products')
+    //         .then((res) => {
+    //             res.json();
+    //         })
+    //         .then((data) => {
+    //             setProduct(data);
+    //         });
+    // }, []);
     useEffect(() => {
         dispatch(getProductListAction());
     }, []);
     const productList = useSelector((state) => state.product.productList);
     console.log(productList);
+    const dispatch = useDispatch();
+    const handleGetProduct = () => {
+        dispatch(getProductListAction());
+    };
 
     const columns = [
         {
@@ -45,7 +55,14 @@ function Orders() {
             </Helmet>
             <HeaderUser />
             <Table columns={columns} dataSource={data} onChange={onChange} />
-            <button> Get</button>
+            <button
+                onClick={() => {
+                    handleGetProduct();
+                }}
+            >
+                {' '}
+                Get
+            </button>
         </>
     );
 }

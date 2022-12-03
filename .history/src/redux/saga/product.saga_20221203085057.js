@@ -27,6 +27,7 @@ function* getProductListSaga() {
             type: SUCCESS(PRODUCT_ACTION.GET_PRODUCT_LIST),
             payload: {
                 data: result.data,
+                error: string,
             },
         });
         console.log(result.data);

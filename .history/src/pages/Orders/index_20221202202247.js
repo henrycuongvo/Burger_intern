@@ -12,15 +12,14 @@ const cx = classNames.bind(styles);
 
 const data = [];
 function Orders() {
-    const dispatch = useDispatch();
-
     const [product, setProduct] = useState();
+    useEffect(() => {});
+    const productList = useSelector((state) => state.product.data);
 
-    useEffect(() => {
+    const dispatch = useDispatch();
+    const handleGetProduct = () => {
         dispatch(getProductListAction());
-    }, []);
-    const productList = useSelector((state) => state.product.productList);
-    console.log(productList);
+    };
 
     const columns = [
         {
@@ -45,7 +44,14 @@ function Orders() {
             </Helmet>
             <HeaderUser />
             <Table columns={columns} dataSource={data} onChange={onChange} />
-            <button> Get</button>
+            <button
+                onClick={() => {
+                    handleGetProduct();
+                }}
+            >
+                {' '}
+                Get
+            </button>
         </>
     );
 }
