@@ -10,6 +10,26 @@
       "email": "abc",
       "password": "abc",
       "id": 2
+    },
+    {
+      "email": "abc",
+      "password": "abc",
+      "id": 3
+    },
+    {
+      "email": "abc",
+      "password": "abc",
+      "id": 4
+    },
+    {
+      "email": "abc",
+      "password": "abc",
+      "id": 5
+    },
+    {
+      "email": "abc",
+      "password": "abc",
+      "id": 6
     }
   ],
   "register": [],
@@ -26,73 +46,23 @@
     },
     {
       "getCart": {
-        "salad": 0,
-        "bacon": 0,
-        "cheese": 0,
-        "meat": 0
-      },
-      "getPrice": 0,
-      "id": 6
-    },
-    {
-      "getCart": {
         "salad": 2,
-        "bacon": 0,
+        "bacon": 1,
         "cheese": 0,
-        "meat": 0
+        "meat": 1
       },
-      "getPrice": 2,
-      "id": 7
+      "getPrice": 4,
+      "id": 17
     },
     {
       "getCart": {
-        "salad": 0,
-        "bacon": 0,
-        "cheese": 0,
-        "meat": 0
+        "salad": 3,
+        "bacon": 3,
+        "cheese": 3,
+        "meat": 3
       },
-      "getPrice": 0,
-      "id": 8
-    },
-    {
-      "getCart": {
-        "salad": 2,
-        "bacon": 0,
-        "cheese": 0,
-        "meat": 0
-      },
-      "getPrice": 2,
-      "id": 9
-    },
-    {
-      "getCart": {
-        "salad": 2,
-        "bacon": 0,
-        "cheese": 0,
-        "meat": 0
-      },
-      "getPrice": 2,
-      "id": 10
-    },
-    {
-      "getCart": {
-        "salad": 2,
-        "bacon": 0,
-        "cheese": 0,
-        "meat": 0
-      },
-      "getPrice": 2,
-      "id": 11
-    },
-    {
-      "getCart": {
-        "salad": 2,
-        "bacon": 0,
-        "cheese": 0,
-        "meat": 0
-      },
-      "getPrice": 2,
-      "id": 12
+      "getPrice": 12,
+      "id": 18
     },
     {
       "getCart": {
@@ -102,7 +72,17 @@
         "meat": 0
       },
       "getPrice": 0,
-      "id": 13
+      "id": 19
+    },
+    {
+      "getCart": {
+        "salad": 2,
+        "bacon": 1,
+        "cheese": 1,
+        "meat": 1
+      },
+      "getPrice": 5,
+      "id": 20
     },
     {
       "getCart": {
@@ -112,7 +92,14 @@
         "meat": 0
       },
       "getPrice": 0,
-      "id": 14
+      "initialValues": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "address": "",
+        "note": ""
+      },
+      "id": 21
     },
     {
       "getCart": {
@@ -122,7 +109,24 @@
         "meat": 0
       },
       "getPrice": 0,
-      "id": 15
+      "initialValues": {
+        "name": "",
+        "phone": "",
+        "email": "",
+        "address": "",
+        "note": ""
+      },
+      "id": 22
+    },
+    {
+      "getCart": {
+        "salad": 0,
+        "bacon": 0,
+        "cheese": 0,
+        "meat": 0
+      },
+      "getPrice": 0,
+      "id": 23
     }
   ],
   "categories": []

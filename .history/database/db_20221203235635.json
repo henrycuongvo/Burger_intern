@@ -1,0 +1,70 @@
+{
+    "users": [],
+    "login": [
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 1
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 2
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 3
+        },
+        {
+            "email": "abc",
+            "password": "abc",
+            "id": 4
+        }
+    ],
+    "register": [],
+    "products": [
+        {
+            "getCart": {
+                "salad": 2,
+                "bacon": 0,
+                "cheese": 0,
+                "meat": 0
+            },
+            "getPrice": 2,
+            "id": 5
+        },
+
+        {
+            "getCart": {
+                "salad": 2,
+                "bacon": 1,
+                "cheese": 0,
+                "meat": 1
+            },
+            "getPrice": 4,
+            "id": 17
+        },
+        {
+            "getCart": {
+                "salad": 3,
+                "bacon": 3,
+                "cheese": 3,
+                "meat": 3
+            },
+            "getPrice": 12,
+            "id": 18
+        },
+        {
+            "getCart": {
+                "salad": 0,
+                "bacon": 0,
+                "cheese": 0,
+                "meat": 0
+            },
+            "getPrice": 0,
+            "id": 19
+        }
+    ],
+    "categories": []
+}
