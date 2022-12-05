@@ -28,6 +28,7 @@ function Orders() {
             key: id,
         };
     });
+    console.log(productList.data);
 
     //Handle Sort Price Column
     const columns = [
@@ -43,6 +44,17 @@ function Orders() {
             sorter: (a, b) => a.Price - b.Price,
         },
     ];
+    // const setAgeSort = () => {
+    //     setSortedInfo({
+    //         order: 'descend',
+    //         columnKey: 'age',
+    //     });
+    // };
+
+    // const onChange = (sorter) => {
+    //     console.log('params', sorter);
+    //     setSortedInfo(sorter);
+    // };
 
     return (
         <>
@@ -55,9 +67,6 @@ function Orders() {
                     className={cx('table')}
                     columns={columns}
                     dataSource={tableData}
-                    onRow={() => ({
-                        onClick: () => console.log('Handle Update'),
-                    })}
                 />
             </div>
         </>

@@ -69,6 +69,8 @@ const Checkout = () => {
                 },
             }),
         );
+        console.log(getInfo);
+        console.log(Form);
     };
     return (
         <>

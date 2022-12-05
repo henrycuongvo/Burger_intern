@@ -30,6 +30,7 @@ function Orders() {
     });
 
     //Handle Sort Price Column
+    const [sortedInfo, setSortedInfo] = useState({});
     const columns = [
         {
             title: 'Ingredients',
@@ -40,9 +41,26 @@ function Orders() {
             title: 'Price',
             dataIndex: 'Price',
             key: 'Price',
-            sorter: (a, b) => a.Price - b.Price,
+            sorter: (a, b) => a.age - b.age,
+            sortOrder:
+                sortedInfo.columnKey === 'Price' ? sortedInfo.order : null,
+            ellipsis: true,
         },
     ];
+    // const setAgeSort = () => {
+    //     setSortedInfo({
+    //         order: 'descend',
+    //         columnKey: 'age',
+    //     });
+    // };
+
+    // const onChange = (sorter) => {
+    //     console.log('params', sorter);
+    //     setSortedInfo(sorter);
+    // };
+    const handleChange = (sorter) => {
+        setSortedInfo(sorter);
+    };
 
     return (
         <>
@@ -55,9 +73,7 @@ function Orders() {
                     className={cx('table')}
                     columns={columns}
                     dataSource={tableData}
-                    onRow={() => ({
-                        onClick: () => console.log('Handle Update'),
-                    })}
+                    onChange={handleChange}
                 />
             </div>
         </>

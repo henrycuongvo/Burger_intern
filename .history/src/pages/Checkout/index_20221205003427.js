@@ -20,8 +20,6 @@ const cx = classNames.bind(styles);
 //     note: '',
 // };
 const Checkout = () => {
-    const [getDataForm] = Form.useForm();
-
     const getCart = useSelector((state) => state.burger.cart);
     const getPrice = useSelector((state) => state.burger.totalPrice);
     const dispatch = useDispatch();
@@ -62,7 +60,6 @@ const Checkout = () => {
                 data: {
                     getCart,
                     getPrice,
-                    getInfo,
                 },
                 callback: {
                     goToList: () => navigate(ROUTES.USER.ORDERS),
@@ -70,6 +67,7 @@ const Checkout = () => {
             }),
         );
     };
+
     return (
         <>
             <Helmet>
@@ -124,8 +122,7 @@ const Checkout = () => {
 
                 {/* Table Contact Data */}
                 <Form
-                    form={getDataForm}
-                    onFinish={(values) => handleOrderProduct(values)}
+                    onFinish={handleOrderProduct}
                     // initialValues={initialValues}
                     className={cx('table_info')}
                     {...layout}
@@ -175,8 +172,10 @@ const Checkout = () => {
                     <Form.Item className={cx('item')} name="note" label="Note">
                         <Input.TextArea />
                     </Form.Item>
+                </Form>
+                <div className={cx('order')}>
                     <Button
-                        className={cx('order_button')}
+                        order
                         onClick={(values) => {
                             handleOrderProduct(values);
                         }}
@@ -184,7 +183,7 @@ const Checkout = () => {
                         {/* Handle button if order ends then navigate to */}
                         Order
                     </Button>
-                </Form>
+                </div>
             </div>
         </>
     );

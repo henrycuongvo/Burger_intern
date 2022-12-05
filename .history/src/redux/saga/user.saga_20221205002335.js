@@ -38,6 +38,9 @@ function* loginSaga(action) {
         } else {
             throw new Error('Incorrect password');
         }
+        notification.error({
+            message: 'Đăng nhập thành công',
+        });
     } catch (e) {
         yield put({
             type: USER_LOGIN_FAIL,

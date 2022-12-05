@@ -62,6 +62,10 @@ function* loginSaga(action) {
                 },
             });
         }
+
+        notification.error({
+            message: 'Đăng nhập thành công',
+        });
     }
 }
 // function* logOutSaga(action) {

@@ -17,7 +17,7 @@ function* loginSaga(action) {
     try {
         const { data, callback } = action.payload;
         const result = yield axios.post('http://localhost:4000/login', data);
-        if (data.email === 'abc@gmail.com' && data.password === 'abc') {
+        if (data.email === 'abc@gmail.com' && data.password === '123') {
             yield put({
                 type: USER_LOGIN_SUCCESS,
                 payload: {

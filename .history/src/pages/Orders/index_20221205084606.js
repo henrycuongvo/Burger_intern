@@ -55,9 +55,6 @@ function Orders() {
                     className={cx('table')}
                     columns={columns}
                     dataSource={tableData}
-                    onRow={() => ({
-                        onClick: () => console.log('Handle Update'),
-                    })}
                 />
             </div>
         </>

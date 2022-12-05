@@ -56,7 +56,7 @@ function Orders() {
                     columns={columns}
                     dataSource={tableData}
                     onRow={() => ({
-                        onClick: () => console.log('Handle Update'),
+                        onClick: () => console.log('###############'),
                     })}
                 />
             </div>

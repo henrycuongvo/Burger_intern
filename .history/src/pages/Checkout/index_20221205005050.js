@@ -51,7 +51,7 @@ const Checkout = () => {
 
     const handleOrderProduct = (values) => {
         const getInfo = {
-            name: values.name,
+            name: 'name'.values,
             phone: values.phone,
             email: values.email,
             address: values.address,
@@ -69,6 +69,8 @@ const Checkout = () => {
                 },
             }),
         );
+        console.log(getInfo);
+        console.log(Form);
     };
     return (
         <>
@@ -175,8 +177,10 @@ const Checkout = () => {
                     <Form.Item className={cx('item')} name="note" label="Note">
                         <Input.TextArea />
                     </Form.Item>
+                </Form>
+                <div className={cx('order')}>
                     <Button
-                        className={cx('order_button')}
+                        order
                         onClick={(values) => {
                             handleOrderProduct(values);
                         }}
@@ -184,7 +188,7 @@ const Checkout = () => {
                         {/* Handle button if order ends then navigate to */}
                         Order
                     </Button>
-                </Form>
+                </div>
             </div>
         </>
     );

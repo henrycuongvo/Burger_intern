@@ -28,6 +28,7 @@ function Orders() {
             key: id,
         };
     });
+    console.log(productList.data);
 
     //Handle Sort Price Column
     const columns = [
@@ -55,9 +56,6 @@ function Orders() {
                     className={cx('table')}
                     columns={columns}
                     dataSource={tableData}
-                    onRow={() => ({
-                        onClick: () => console.log('Handle Update'),
-                    })}
                 />
             </div>
         </>

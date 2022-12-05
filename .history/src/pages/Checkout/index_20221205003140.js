@@ -20,8 +20,6 @@ const cx = classNames.bind(styles);
 //     note: '',
 // };
 const Checkout = () => {
-    const [getDataForm] = Form.useForm();
-
     const getCart = useSelector((state) => state.burger.cart);
     const getPrice = useSelector((state) => state.burger.totalPrice);
     const dispatch = useDispatch();
@@ -48,28 +46,17 @@ const Checkout = () => {
             range: '${label} must be between ${min} and ${max}',
         },
     };
-
-    const handleOrderProduct = (values) => {
-        const getInfo = {
-            name: values.name,
-            phone: values.phone,
-            email: values.email,
-            address: values.address,
-            note: values.note,
-        };
+    const handleOrderProduct = () => {
         dispatch(
             CREATE_PRODUCT_REQUEST({
-                data: {
-                    getCart,
-                    getPrice,
-                    getInfo,
-                },
+                data: { getCart, getPrice },
                 callback: {
                     goToList: () => navigate(ROUTES.USER.ORDERS),
                 },
             }),
         );
     };
+
     return (
         <>
             <Helmet>
@@ -124,8 +111,7 @@ const Checkout = () => {
 
                 {/* Table Contact Data */}
                 <Form
-                    form={getDataForm}
-                    onFinish={(values) => handleOrderProduct(values)}
+                    // onFinish={handleOrderProduct}
                     // initialValues={initialValues}
                     className={cx('table_info')}
                     {...layout}
@@ -175,8 +161,10 @@ const Checkout = () => {
                     <Form.Item className={cx('item')} name="note" label="Note">
                         <Input.TextArea />
                     </Form.Item>
+                </Form>
+                <div className={cx('order')}>
                     <Button
-                        className={cx('order_button')}
+                        order
                         onClick={(values) => {
                             handleOrderProduct(values);
                         }}
@@ -184,7 +172,7 @@ const Checkout = () => {
                         {/* Handle button if order ends then navigate to */}
                         Order
                     </Button>
-                </Form>
+                </div>
             </div>
         </>
     );

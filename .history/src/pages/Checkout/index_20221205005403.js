@@ -69,6 +69,8 @@ const Checkout = () => {
                 },
             }),
         );
+        console.log(getInfo);
+        console.log(Form);
     };
     return (
         <>
@@ -176,7 +178,7 @@ const Checkout = () => {
                         <Input.TextArea />
                     </Form.Item>
                     <Button
-                        className={cx('order_button')}
+                        order
                         onClick={(values) => {
                             handleOrderProduct(values);
                         }}
