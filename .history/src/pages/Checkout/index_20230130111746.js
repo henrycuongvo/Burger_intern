@@ -70,7 +70,6 @@ const Checkout = () => {
                     },
                 }),
             );
-            return;
         }
     };
     return (
@@ -78,7 +77,6 @@ const Checkout = () => {
             <Helmet>
                 <title> Checkout</title>
             </Helmet>
-
             <HeaderUser />
             <div className={cx('wrapper')}>
                 <div className={cx('content')}>

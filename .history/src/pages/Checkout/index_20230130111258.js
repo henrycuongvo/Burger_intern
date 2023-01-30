@@ -57,28 +57,24 @@ const Checkout = () => {
             address: values.address,
             note: values.note,
         };
-        if (getInfo.name && getInfo.phone && getInfo.address) {
-            dispatch(
-                CREATE_PRODUCT_REQUEST({
-                    data: {
-                        getCart,
-                        getPrice,
-                        getInfo,
-                    },
-                    callback: {
-                        goToList: () => navigate(ROUTES.USER.ORDERS),
-                    },
-                }),
-            );
-            return;
-        }
+        dispatch(
+            CREATE_PRODUCT_REQUEST({
+                data: {
+                    getCart,
+                    getPrice,
+                    getInfo,
+                },
+                callback: {
+                    goToList: () => navigate(ROUTES.USER.ORDERS),
+                },
+            }),
+        );
     };
     return (
         <>
             <Helmet>
                 <title> Checkout</title>
             </Helmet>
-
             <HeaderUser />
             <div className={cx('wrapper')}>
                 <div className={cx('content')}>

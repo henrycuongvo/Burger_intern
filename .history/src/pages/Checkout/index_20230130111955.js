@@ -57,7 +57,9 @@ const Checkout = () => {
             address: values.address,
             note: values.note,
         };
-        if (getInfo.name && getInfo.phone && getInfo.address) {
+        if (!getInfo.name && !getInfo.phone && !getInfo.address) {
+            alert('Vui lòng nhập thông tin giao hàng...');
+        } else {
             dispatch(
                 CREATE_PRODUCT_REQUEST({
                     data: {
@@ -70,7 +72,6 @@ const Checkout = () => {
                     },
                 }),
             );
-            return;
         }
     };
     return (
@@ -78,7 +79,6 @@ const Checkout = () => {
             <Helmet>
                 <title> Checkout</title>
             </Helmet>
-
             <HeaderUser />
             <div className={cx('wrapper')}>
                 <div className={cx('content')}>

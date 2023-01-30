@@ -24,12 +24,6 @@ export default function Doashboard() {
     const [bacon, setBacon] = useState(0);
     const [cheese, setCheese] = useState(0);
     const [meat, setMeat] = useState(0);
-    // let disable;
-    // if (salad === 0) {
-    //     disable = true;
-    // } else {
-    //     disable = false;
-    // }
 
     useEffect(() => {
         setSalad(getCart.salad);
@@ -115,7 +109,7 @@ export default function Doashboard() {
                                     onClick={() =>
                                         dispatch(decrement(String('salad')))
                                     }
-                                    // disabled={disable}
+                                    disabled={disable}
                                 >
                                     Less
                                 </Button>
@@ -141,7 +135,6 @@ export default function Doashboard() {
                                     onClick={() =>
                                         dispatch(decrement(String('bacon')))
                                     }
-                                    // disabled={disable}
                                 >
                                     Less
                                 </Button>
@@ -167,7 +160,6 @@ export default function Doashboard() {
                                     onClick={() =>
                                         dispatch(decrement(String('cheese')))
                                     }
-                                    // disabled={disable}
                                 >
                                     Less
                                 </Button>
@@ -193,7 +185,6 @@ export default function Doashboard() {
                                     onClick={() =>
                                         dispatch(decrement(String('meat')))
                                     }
-                                    // disabled={disable}
                                 >
                                     Less
                                 </Button>

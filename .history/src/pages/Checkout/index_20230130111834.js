@@ -70,7 +70,8 @@ const Checkout = () => {
                     },
                 }),
             );
-            return;
+        } else {
+            alert('Vui lòng nhập thông tin giao hàng...');
         }
     };
     return (
@@ -78,7 +79,6 @@ const Checkout = () => {
             <Helmet>
                 <title> Checkout</title>
             </Helmet>
-
             <HeaderUser />
             <div className={cx('wrapper')}>
                 <div className={cx('content')}>

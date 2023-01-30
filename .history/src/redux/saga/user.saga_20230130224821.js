@@ -16,14 +16,10 @@ import {
 function* loginSaga(action) {
     try {
         const { data, callback } = action.payload;
-        // const checkUser = yield axios.get('http://localhost:4000/login');
-        // console.log('User', checkUser.data);
+        const checkUser = yield axios.get('http://localhost:4000/login');
+        console.log('User', checkUser);
+        const result = yield axios.post('http://localhost:4000/login', data);
         if (data.email === 'abc@gmail.com' && data.password === 'abc') {
-            const result = yield axios.post(
-                'http://localhost:4000/login',
-                data,
-            );
-
             yield put({
                 type: USER_LOGIN_SUCCESS,
                 payload: {
@@ -38,7 +34,7 @@ function* loginSaga(action) {
 
             // if (result.data?.user?.role === 'admin') {
             // yield callback.goToDashboard();
-            // } else {};
+            // } else {
 
             yield callback.goToHome();
         } else {

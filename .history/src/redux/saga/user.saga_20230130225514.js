@@ -38,7 +38,7 @@ function* loginSaga(action) {
 
             // if (result.data?.user?.role === 'admin') {
             // yield callback.goToDashboard();
-            // } else {};
+            // } else {
 
             yield callback.goToHome();
         } else {

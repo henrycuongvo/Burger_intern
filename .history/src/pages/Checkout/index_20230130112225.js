@@ -57,8 +57,8 @@ const Checkout = () => {
             address: values.address,
             note: values.note,
         };
-        if (getInfo.name && getInfo.phone && getInfo.address) {
-            dispatch(
+        if (!getInfo.name && !getInfo.phone && !getInfo.address) {
+              dispatch(
                 CREATE_PRODUCT_REQUEST({
                     data: {
                         getCart,
@@ -70,15 +70,15 @@ const Checkout = () => {
                     },
                 }),
             );
-            return;
         }
+        else {
+          
     };
     return (
         <>
             <Helmet>
                 <title> Checkout</title>
             </Helmet>
-
             <HeaderUser />
             <div className={cx('wrapper')}>
                 <div className={cx('content')}>

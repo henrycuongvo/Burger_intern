@@ -78,8 +78,9 @@ const Checkout = () => {
             <Helmet>
                 <title> Checkout</title>
             </Helmet>
-
-            <HeaderUser />
+            <div className={cx('navbar')}>
+                <HeaderUser />
+            </div>
             <div className={cx('wrapper')}>
                 <div className={cx('content')}>
                     <div className={cx('sandwich')}></div>
